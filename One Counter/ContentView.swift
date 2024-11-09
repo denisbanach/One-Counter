@@ -8,34 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
+        
+        Spacer()
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
+            Text("")
+            
         }
         
-        HStack{
-            Button("-"){
-                
-            }
-            .frame(width: 150, height: 50)
-            .background(Color.green)
-            .cornerRadius(10)
-            .buttonStyle(.bordered)
-            .fontWeight(.bold)
-            .font(.largeTitle)
         
-            Button("+"){
+        //Spacer()
+        
+        HStack{
+            
+            Button{
                 
             }
-            .frame(width: 150, height: 50)
-            .background(Color.green)
-            .cornerRadius(10)
-            //.buttonStyle(.bordered)
-            .fontWeight(.bold)
-            .font(.largeTitle)
+            label: {
+                Text("-")
+                    .frame(width: 150, height: 150)
+                    .font(.title)
+                    .fontWeight(.bold)
+            }.buttonStyle(.borderedProminent)
+        
+            Button{
+                
+            }
+            label: {
+                Text("+")
+                    .frame(width: 150, height: 150)
+                    .font(.title)
+                    .fontWeight(.bold)
+            }.buttonStyle(.borderedProminent)
         }
         .padding()
     }
