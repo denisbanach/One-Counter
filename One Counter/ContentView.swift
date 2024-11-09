@@ -15,6 +15,28 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!")
         }
+        
+        HStack{
+            Button("-"){
+                
+            }
+            .frame(width: 150, height: 50)
+            .background(Color.green)
+            .cornerRadius(10)
+            .buttonStyle(.bordered)
+            .fontWeight(.bold)
+            .font(.largeTitle)
+        
+            Button("+"){
+                
+            }
+            .frame(width: 150, height: 50)
+            .background(Color.green)
+            .cornerRadius(10)
+            //.buttonStyle(.bordered)
+            .fontWeight(.bold)
+            .font(.largeTitle)
+        }
         .padding()
     }
 }
