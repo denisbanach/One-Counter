@@ -26,8 +26,7 @@ struct ContentView: View {
                 
                 Text("\(counter)")
                     .frame(maxWidth: .infinity)
-                    .background(Color.red)
-                    .cornerRadius(10)
+                    .font(.title)
                 
                 HStack{
                     
@@ -36,7 +35,7 @@ struct ContentView: View {
                     }
                     label: {
                         Text("-")
-                            .frame(width: 150, height: 150)
+                            .frame(width: 100, height: 100)
                             .font(.title)
                             .fontWeight(.bold)
                     }.buttonStyle(.borderedProminent)
@@ -46,7 +45,7 @@ struct ContentView: View {
                     }
                     label: {
                         Text("+")
-                            .frame(width: 150, height: 150)
+                            .frame(width: 100, height: 100)
                             .font(.title)
                             .fontWeight(.bold)
                     }.buttonStyle(.borderedProminent)
@@ -54,7 +53,6 @@ struct ContentView: View {
                 
                 
             }
-            .background(Color(.background))
             .padding()
         
         }.background(Color.green)
